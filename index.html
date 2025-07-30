@@ -1,46 +1,134 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Basic HTML Website</title>
-        <meta name="description" content="Basic HTML Website project for roadmap.sh">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--Makeshift NavBar using Tables-->
-        <table width="100%">
-            <tr>
-                <td>
-                    <h2>Dominic N.</h2>
-                </td>
-                <td align="right">
-                    <a href="#">Home</a> /
-                    <a href="#">Projects</a> /
-                    <a href="#">Articles</a> /
-                    <a href="#">Contact</a>
-                </td>
-            </tr>
-        </table>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Header-->
+        <ul class="nav nav-pills justify-content-center lead mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+            </li>
+        </ul>
 
-        <!--Hero?-->
-        <h1 align="center">Junior Web Developer</h1>
-        <h3 align="center">Simple, easy.</h3>
-
-        <section>
-            <div>
-                <h3>Projects</h3>
-                <ul>
-                    <li>
-                        <a href="https://github.com/zhangfps/single-page-html-cv">Single Page CV</a>
-                    </li>
-                    <li>
-                        <a href="#">Basic HTML Website (this)</a>
-                    </li>
-                </ul>
+    <!--Hero-->
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Hello There!</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">My name is Dom, a Trainee Web Developer working for Systems and Software Consulting Group, Incorporated (SSCGI). My long term goals are to grow and find my purpose in life. But for now, I must focus on becoming a better developer, one step at a time.</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img src="bliss.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
             </div>
-        </section>
-        <script src="" async defer></script>
-    </body>
+        </div>
+    </div>
+
+    </div>
+  </body>
+
+    <!--Features-->
+    <div class="container px-4 py-5" id="projects"> 
+        <h2 class="pb-2 border-bottom">Projects</h2> 
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+            <div class="col"> 
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://res.cloudinary.com/djcyhbk2e/image/upload/c_limit,f_auto,q_50,w_1400/v1/gvv/prod/fq1w2bdvn85uqlnvz3ga');"> 
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3> 
+                        <ul class="d-flex list-unstyled mt-auto"> 
+                            <li class="me-auto"> 
+                                <img src="https://i.pinimg.com/736x/02/68/86/02688636473aeac9b2bc7c01bed1b13d.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                            </li> 
+                            <li class="d-flex align-items-center me-3"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> 
+                                <small>Earth</small> 
+                            </li> 
+                            <li class="d-flex align-items-center"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> 
+                                <small>3d</small> 
+                            </li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');"> 
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3> 
+                        <ul class="d-flex list-unstyled mt-auto"> 
+                            <li class="me-auto"> 
+                                <img src="https://i.pinimg.com/736x/02/68/86/02688636473aeac9b2bc7c01bed1b13d.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                            </li> 
+                            <li class="d-flex align-items-center me-3"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> 
+                                <small>Pakistan</small> 
+                            </li> 
+                            <li class="d-flex align-items-center"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> 
+                                <small>4d</small> 
+                            </li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');"> 
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3> 
+                        <ul class="d-flex list-unstyled mt-auto"> 
+                            <li class="me-auto"> 
+                                <img src="https://i.pinimg.com/736x/02/68/86/02688636473aeac9b2bc7c01bed1b13d.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                            </li> 
+                            <li class="d-flex align-items-center me-3"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> 
+                                <small>California</small> 
+                            </li> 
+                            <li class="d-flex align-items-center"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> 
+                                <small>5d</small> 
+                            </li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+
+    <!--Footer-->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+                <svg class="bi" width="30" height="24" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Noe, Dominic</span> 
+        </div>
+    </footer> 
+</div>
 </html>
